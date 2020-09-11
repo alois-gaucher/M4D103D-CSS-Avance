@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "SansSerif";
+}
+body header nav ul li {
+  text-transform: capitalize;
+}
+
 header, section, footer, aside, nav, article, figure, figcaption {
   display: block;
 }
