@@ -1,3 +1,7 @@
+@mixin capitalize {
+  text-transform: capitalize;
+}
+
 body {
   margin: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", "SansSerif";
@@ -5,7 +9,7 @@ body {
     nav {
       ul {
         li {
-          text-transform: capitalize;
+          @include capitalize;
         }
       }
     }
