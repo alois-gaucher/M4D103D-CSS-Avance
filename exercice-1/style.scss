@@ -1,0 +1,140 @@
+$font-stack: Trebuchet MS, Times, serif;
+$border-solid-2px: 2px solid #000000;
+$border-solid-1px: 1px solid #eeeeee;
+$blanc: #fffff;
+
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+}
+
+body {
+  font: 100%, $font-stack;
+  color: #333333;
+  background-color: #f9f8f6;
+  background-image: url("images/fond.jpg");
+  background-position: center;
+  line-height: 1.4em;
+  margin: 0;
+
+  .wrapper {
+    position: relative;
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: $border-solid-2px;
+    background-color: $blanc;
+  }
+
+  header {
+    height: 160px;
+  }
+
+  h1 {
+    font-weight: normal;
+    width: 940px;
+    height: 130px;
+    background-image: url("images/header.jpg");
+    margin: 0px;
+  }
+
+  h2 {
+    font-weight: normal;
+    margin: 10px 0 5px 0;
+  }
+
+  h3 {
+    margin: 0 0 10px 0;
+    color: #de6581;
+  }
+
+  nav, footer {
+    clear: both;
+    color: $blanc;
+    background-color: #aeaca8;
+    height: 30px;
+
+    ul {
+      margin: 0px;
+      padding: 5px 0 5px 30px;
+
+      li {
+        display: inline;
+        margin-right: 40px;
+
+        a {
+          color: $blanc;
+
+          :hover, .current {
+            color: $blanc;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: 80%;
+    padding: 7px 0 0 20px;
+  }
+
+  section.courses {
+    float: left;
+    width: 659px;
+    border-right: $border-solid-1px;
+  }
+
+  article {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+
+    #finarticles {
+      clear: both;
+      opacity: 0;
+    }
+  }
+
+  hgroup {
+    margin-top: 40px;
+  }
+
+  figure {
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 20px;
+    border: $border-solid-1px;
+  }
+
+  figcaption {
+    font-size: 90%;
+    text-align: left;
+  }
+
+  aside {
+    width: 230px;
+    float: left;
+    padding: 0 0 0 20px;
+
+    h2 {
+      padding: 30px 0 10px 0;
+      color: #de6581;
+    }
+
+    section a {
+      display: block;
+      padding: 10px;
+      border-bottom: $border-solid-1px;
+
+      :hover {
+        color: #985d6a;
+        background-color: #efefef;
+      }
+    }
+  }
+
+  a {
+    color: #de6581;
+    text-decoration: none;
+  }
+}

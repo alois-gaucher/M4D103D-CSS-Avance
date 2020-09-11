@@ -1,0 +1,115 @@
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+}
+
+body {
+  font: 100%, Trebuchet MS, Times, serif;
+  color: #333333;
+  background-color: #f9f8f6;
+  background-image: url("images/fond.jpg");
+  background-position: center;
+  line-height: 1.4em;
+  margin: 0;
+}
+body .wrapper {
+  position: relative;
+  width: 940px;
+  margin: 20px auto 20px auto;
+  border: 2px solid #000000;
+  background-color: #fffff;
+}
+body header {
+  height: 160px;
+}
+body h1 {
+  font-weight: normal;
+  width: 940px;
+  height: 130px;
+  background-image: url("images/header.jpg");
+  margin: 0px;
+}
+body h2 {
+  font-weight: normal;
+  margin: 10px 0 5px 0;
+}
+body h3 {
+  margin: 0 0 10px 0;
+  color: #de6581;
+}
+body nav, body footer {
+  clear: both;
+  color: #fffff;
+  background-color: #aeaca8;
+  height: 30px;
+}
+body nav ul, body footer ul {
+  margin: 0px;
+  padding: 5px 0 5px 30px;
+}
+body nav ul li, body footer ul li {
+  display: inline;
+  margin-right: 40px;
+}
+body nav ul li a, body footer ul li a {
+  color: #fffff;
+}
+body nav ul li a :hover, body nav ul li a .current, body footer ul li a :hover, body footer ul li a .current {
+  color: #fffff;
+}
+body footer {
+  font-size: 80%;
+  padding: 7px 0 0 20px;
+}
+body section.courses {
+  float: left;
+  width: 659px;
+  border-right: 1px solid #eeeeee;
+}
+body article {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+body article #finarticles {
+  clear: both;
+  opacity: 0;
+}
+body hgroup {
+  margin-top: 40px;
+}
+body figure {
+  float: left;
+  width: 290px;
+  height: 220px;
+  padding: 5px;
+  margin: 20px;
+  border: 1px solid #eeeeee;
+}
+body figcaption {
+  font-size: 90%;
+  text-align: left;
+}
+body aside {
+  width: 230px;
+  float: left;
+  padding: 0 0 0 20px;
+}
+body aside h2 {
+  padding: 30px 0 10px 0;
+  color: #de6581;
+}
+body aside section a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+body aside section a :hover {
+  color: #985d6a;
+  background-color: #efefef;
+}
+body a {
+  color: #de6581;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
