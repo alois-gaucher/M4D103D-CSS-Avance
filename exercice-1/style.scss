@@ -65,7 +65,7 @@ body {
         a {
           color: $blanc;
 
-          :hover, .current {
+          &:hover, .current {
             color: $blanc;
           }
         }
@@ -128,7 +128,7 @@ body {
       padding: 10px;
       border-bottom: $border-solid-1px;
 
-      :hover {
+      &:hover {
         color: #985d6a;
         background-color: #efefef;
       }

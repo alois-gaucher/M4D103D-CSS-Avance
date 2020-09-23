@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset=utf-8>
-    <title>.::KINGYO::.</title>
+    <title>.:: KINGYO ::.</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
@@ -74,9 +74,11 @@
 <script>
     function changeTitle() {
     var title = $(document).prop('title');
+    var basetitle = $(document).prop('title');
     if (title.indexOf('>>>') == -1) {
         setTimeout(changeTitle, 500);
-        $(document).prop('title', '>' + title);
+        $(document).prop('title', '>' + title + '<');
+        $(document).prop(basetitle);
     }
 }
 changeTitle();

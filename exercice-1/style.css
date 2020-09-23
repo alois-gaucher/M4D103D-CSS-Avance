@@ -61,7 +61,7 @@ body nav ul li, body footer ul li {
 body nav ul li a, body footer ul li a {
   color: #fffff;
 }
-body nav ul li a :hover, body nav ul li a .current, body footer ul li a :hover, body footer ul li a .current {
+body nav ul li a:hover, body nav ul li a .current, body footer ul li a:hover, body footer ul li a .current {
   color: #fffff;
 }
 body footer {
@@ -111,7 +111,7 @@ body aside section a {
   padding: 10px;
   border-bottom: 1px solid #eeeeee;
 }
-body aside section a :hover {
+body aside section a:hover {
   color: #985d6a;
   background-color: #efefef;
 }

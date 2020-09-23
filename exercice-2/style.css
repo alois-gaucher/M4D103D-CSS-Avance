@@ -1,0 +1,72 @@
+* {
+  font-family: Lato, Arial, SansSerif;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+html .container, body .container {
+  width: 100vw;
+  height: 100vh;
+}
+html .navbar, body .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .navbar #logo, body .navbar #logo {
+  margin-top: 35px;
+  padding: 0 !important;
+  height: 86px;
+}
+html .navbar a, body .navbar a {
+  margin-top: 68px;
+  list-style: none;
+  font-size: 13pt;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 41px;
+  padding-right: 41px;
+  color: #4d4959;
+}
+html .navbar a:link, body .navbar a:link {
+  text-decoration: none;
+  color: #4d4959;
+}
+html .navbar a:visited, body .navbar a:visited {
+  text-decoration: none;
+}
+html .navbar a:hover, body .navbar a:hover {
+  color: #848789;
+}
+html .backimage, body .backimage {
+  background-image: url("img-html/img-ban.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+html .generation, body .generation {
+  padding-top: 120px;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+html .generation h1, body .generation h1 {
+  margin-top: 35px;
+  letter-spacing: 5px;
+  font-size: 18pt;
+  color: #353738;
+}
+html .generation p, body .generation p {
+  color: #848789;
+}
+
+/*# sourceMappingURL=style.css.map */
