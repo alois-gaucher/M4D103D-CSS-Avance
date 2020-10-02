@@ -3,27 +3,42 @@
 }
 
 html, body {
-  height: auto;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
+  padding: 0;
 }
-html .container, body .container {
+html .main, body .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+html .main .container, body .main .container {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
-html .container .navbar, body .container .navbar {
+html .main .container .navbar, body .main .container .navbar {
   width: 100%;
   height: auto;
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-html .container .navbar #logo, body .container .navbar #logo {
+@media (max-width: 450px) {
+  html .main .container .navbar, body .main .container .navbar {
+    flex-flow: column wrap;
+    flex-basis: fit-content;
+  }
+}
+html .main .container .navbar .logo, body .main .container .navbar .logo {
   margin-top: 35px;
   height: auto;
 }
-html .container .navbar a, body .container .navbar a {
+html .main .container .navbar a, body .main .container .navbar a {
   margin-top: 68px;
   list-style: none;
   font-size: 13pt;
@@ -34,17 +49,17 @@ html .container .navbar a, body .container .navbar a {
   padding-right: 41px;
   color: #4d4959;
 }
-html .container .navbar a:link, body .container .navbar a:link {
+html .main .container .navbar a:link, body .main .container .navbar a:link {
   text-decoration: none;
   color: #4d4959;
 }
-html .container .navbar a:visited, body .container .navbar a:visited {
+html .main .container .navbar a:visited, body .main .container .navbar a:visited {
   text-decoration: none;
 }
-html .container .navbar a:hover, body .container .navbar a:hover {
+html .main .container .navbar a:hover, body .main .container .navbar a:hover {
   color: #848789;
 }
-html .container .backimage, body .container .backimage {
+html .main .container .backimage, body .main .container .backimage {
   background-image: url("img-html/img-ban.jpg");
   width: 100vw;
   height: 100vh;
@@ -53,7 +68,7 @@ html .container .backimage, body .container .backimage {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-html .container .generation, body .container .generation {
+html .main .container .generation, body .main .container .generation {
   padding-top: 120px;
   padding-left: 280px;
   padding-right: 280px;
@@ -61,44 +76,159 @@ html .container .generation, body .container .generation {
   text-align: center;
   background-color: #f7f7f7;
 }
-html .container .generation h1, body .container .generation h1 {
+html .main .container .generation h1, body .main .container .generation h1 {
   margin-top: 35px;
   letter-spacing: 5px;
   font-size: 18pt;
   color: #353738;
 }
-html .container .generation p, body .container .generation p {
+html .main .container .generation p, body .main .container .generation p {
   color: #848789;
 }
-html .container .contact, body .container .contact {
+html .main .container .olivia, body .main .container .olivia {
+  width: 100%;
+  max-height: 600px;
+  height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+html .main .container .olivia .bicycle-company, body .main .container .olivia .bicycle-company {
+  width: 66.6666666667vw;
+  max-height: 600px;
+  height: 100%;
+  background-image: url("img-html/img-1.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .main .container .olivia .vintage-olivia, body .main .container .olivia .vintage-olivia {
+  width: 33.3333333333vw;
+  height: 100%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+html .main .container .olivia .vintage-olivia .cadre, body .main .container .olivia .vintage-olivia .cadre {
+  height: 66.6666666667%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+html .main .container .olivia .vintage-olivia .selle, body .main .container .olivia .vintage-olivia .selle {
+  height: 33.3333333333%;
+  width: 100%;
+  background-image: url("img-html/img-2.jpg");
+  background-size: cover;
+}
+html .main .container .olivia .vintage-olivia h1, body .main .container .olivia .vintage-olivia h1 {
+  margin-top: 35px;
+  letter-spacing: 5px;
+  font-size: 18pt;
+  color: #353738;
+}
+html .main .container .olivia .vintage-olivia p, body .main .container .olivia .vintage-olivia p {
+  color: #848789;
+}
+html .main .container .olivia .selle, body .main .container .olivia .selle {
+  width: 33.3333333333vw;
+  height: 33.3333333333vh;
+  position: relative;
+}
+html .main .container .boriosa, body .main .container .boriosa {
+  max-height: 600px;
+  height: 600px;
+  display: flex;
+}
+html .main .container .boriosa .la-boriosa, body .main .container .boriosa .la-boriosa {
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  width: 33.3333333333vw;
+}
+html .main .container .boriosa .la-boriosa .selle-noire, body .main .container .boriosa .la-boriosa .selle-noire {
+  height: 33.3333333333%;
+  width: 100%;
+  background-image: url("img-html/img-3.jpg");
+  background-size: cover;
+}
+html .main .container .boriosa .la-boriosa .pignon, body .main .container .boriosa .la-boriosa .pignon {
+  height: 66.6666666667%;
+  width: 100%;
+  text-align: center;
+}
+html .main .container .boriosa .la-boriosa .pignon h1, body .main .container .boriosa .la-boriosa .pignon h1 {
+  margin-top: 35px;
+  letter-spacing: 5px;
+  font-size: 18pt;
+  color: #353738;
+}
+html .main .container .boriosa .la-boriosa .pignon p, body .main .container .boriosa .la-boriosa .pignon p {
+  color: #848789;
+}
+html .main .container .boriosa .handcrafted, body .main .container .boriosa .handcrafted {
+  width: 66.6666666667vw;
+  max-height: 600px;
+  height: 100%;
+  background-image: url("img-html/img-4.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html .main .container .discover, body .main .container .discover {
+  width: 100%;
+  max-height: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  background-color: #282f35;
+}
+html .main .container .discover .discover-btn, body .main .container .discover .discover-btn {
+  font-family: Lato, Arial, SansSerif;
+  color: white;
+  background-color: transparent;
+  padding: 15px 60px;
+  border: 1px #94979a solid;
+  transition: all 0.5s;
+}
+html .main .container .discover .discover-btn:hover, body .main .container .discover .discover-btn:hover {
+  color: #4d4959;
+  background-color: white;
+  border-radius: 4px;
+}
+html .main .container .contact, body .main .container .contact {
   width: 100vw;
   height: 100%;
   max-height: 470px;
   text-align: center;
 }
-html .container .contact p, body .container .contact p {
+html .main .container .contact p, body .main .container .contact p {
   font-family: Lato, Arial, SansSerif;
   color: #848789;
   font-style: italic;
   font-size: 24pt;
 }
-html .container .contact img, body .container .contact img {
+html .main .container .contact img, body .main .container .contact img {
   height: 100%;
   padding-top: 110px;
   width: auto;
 }
-html .container .contact form, body .container .contact form {
+html .main .container .contact form, body .main .container .contact form {
   font-family: Lato, Arial, SansSerif;
   margin-bottom: 110px;
 }
-html .container .contact form input, body .container .contact form input {
+html .main .container .contact form input, body .main .container .contact form input {
   width: 33.3333333333vw;
   height: 70px;
   border: #929292 1px solid;
   padding-left: 30px;
   padding-right: 30px;
 }
-html .container .contact form input::placeholder, body .container .contact form input::placeholder {
+html .main .container .contact form input::placeholder, body .main .container .contact form input::placeholder {
   color: #929292;
   vertical-align: center;
   font-size: 20pt;
@@ -106,7 +236,7 @@ html .container .contact form input::placeholder, body .container .contact form 
   font-weight: 300;
   padding-left: 30px;
 }
-html .container .contact form button, body .container .contact form button {
+html .main .container .contact form button, body .main .container .contact form button {
   width: auto;
   height: auto;
   padding: 30px;
@@ -121,6 +251,8 @@ html footer, html .footer, body footer, body .footer {
   width: 100%;
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
+  line-break: auto;
   color: #848789;
 }
 html footer .address, html .footer .address, body footer .address, body .footer .address {
