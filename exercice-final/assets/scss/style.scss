@@ -12,6 +12,26 @@ $darker-grayish-blue: #191f21;
 $text-gray: #919191;
 $grayish-background: #f2f2f1;
 
+// Mixins
+@mixin h1h2h3p {
+    h2 {
+        color: $grayish-blue;
+        font-size: 30px;
+    }
+
+    h3 {
+        color: $grayish-blue;
+        font-size: 22px;
+    }
+
+    p {
+        color: $text-gray;
+        font-size: 18px;
+        font-weight: normal;
+        line-break: auto;
+    }
+}
+
 // Style
 
 html, body {
@@ -78,41 +98,38 @@ html, body {
 
         #summary {
             padding: 100px 0;
-
-            h2 {
-                color: $grayish-blue;
-                font-size: 30px;
-            }
-
-            p {
-                color: $text-gray;
-                font-size: 18px;
-                font-weight: normal;
-            }
+            @include h1h2h3p;
         }
 
         #about-me {
+            @include h1h2h3p;
             background-color: $grayish-background;
             max-height: 750px;
             height: 100%;
             width: 100%;
-            margin: 0;
 
             #img {
                 max-width: 610px;
                 width: 100%;
+                max-height: 750px;
                 height: 100%;
             }
+        }
 
-            h2 {
-                color: $grayish-blue;
-                font-size: 30px;
-            }
+        #my-skills {
+            padding: 100px 0;
+            @include h1h2h3p;
 
-            p {
-                color: $text-gray;
-                font-size: 18px;
-                font-weight: normal;
+            .btn {
+                max-width: 185px;
+                width: 100%;
+                background-color: transparent;
+                border: solid 2.5px $focal-green;
+                color: $focal-green;
+                padding: 20px 30px;
+                margin-top: 20px;
+                font-weight: bold;
+                border-radius: 0;
             }
         }
     }

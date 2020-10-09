@@ -8293,31 +8293,69 @@ html .container #summary h2, body .container #summary h2 {
   color: #566366;
   font-size: 30px;
 }
+html .container #summary h3, body .container #summary h3 {
+  color: #566366;
+  font-size: 22px;
+}
 html .container #summary p, body .container #summary p {
   color: #919191;
   font-size: 18px;
   font-weight: normal;
+  line-break: auto;
 }
 html .container #about-me, body .container #about-me {
   background-color: #f2f2f1;
   max-height: 750px;
   height: 100%;
   width: 100%;
-  margin: 0;
-}
-html .container #about-me #img, body .container #about-me #img {
-  max-width: 610px;
-  width: 100%;
-  height: 100%;
 }
 html .container #about-me h2, body .container #about-me h2 {
   color: #566366;
   font-size: 30px;
 }
+html .container #about-me h3, body .container #about-me h3 {
+  color: #566366;
+  font-size: 22px;
+}
 html .container #about-me p, body .container #about-me p {
   color: #919191;
   font-size: 18px;
   font-weight: normal;
+  line-break: auto;
+}
+html .container #about-me #img, body .container #about-me #img {
+  max-width: 610px;
+  width: 100%;
+  max-height: 750px;
+  height: 100%;
+}
+html .container #my-skills, body .container #my-skills {
+  padding: 100px 0;
+}
+html .container #my-skills h2, body .container #my-skills h2 {
+  color: #566366;
+  font-size: 30px;
+}
+html .container #my-skills h3, body .container #my-skills h3 {
+  color: #566366;
+  font-size: 22px;
+}
+html .container #my-skills p, body .container #my-skills p {
+  color: #919191;
+  font-size: 18px;
+  font-weight: normal;
+  line-break: auto;
+}
+html .container #my-skills .btn, body .container #my-skills .btn {
+  max-width: 185px;
+  width: 100%;
+  background-color: transparent;
+  border: solid 2.5px #2ecc71;
+  color: #2ecc71;
+  padding: 20px 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
