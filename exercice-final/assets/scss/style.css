@@ -8236,7 +8236,7 @@ h3 {
   }
 }
 html, body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   width: 100%;
   height: 100%;
 }
@@ -8245,11 +8245,43 @@ html header, body header {
   height: 100%;
   background: url(../images/header-bg.jpg) center center no-repeat;
   background-size: cover;
+  line-break: strict;
+}
+html header .btn, body header .btn {
+  max-width: 185px;
+  width: 100%;
+  background-color: transparent;
+  border: solid 2.5px white;
+  color: white;
+  padding: 21px 35px;
+  margin-top: 50px;
+  font-weight: bold;
+  border-radius: 0;
 }
 html header h1, body header h1 {
+  line-height: normal;
   font-weight: bold;
-  font-size: 60pt;
+  font-size: 60pt !important;
   color: #ffffff;
+  border-top: white 2.5px solid;
+  border-bottom: white 2.5px solid;
+}
+html .navbar, body .navbar {
+  background-color: #252e30;
+  max-height: 70px;
+  height: 70px;
+  max-width: 100vw;
+  width: 100%;
+  padding: 0;
+}
+html .navbar .nav-item a, body .navbar .nav-item a {
+  font-weight: 700;
+  font-size: 16pt;
+  color: white;
+  line-height: 30pt;
+}
+html .navbar span:first-child, body .navbar span:first-child {
+  color: #2ecc71;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 
 // Variables
 $font-stack: 'Roboto', sans-serif;
+$font-size-header-title: 60pt !important;
 $focal-green: #2ecc71;
 $grayish-blue: #566366;
 $dark-grayish-blue: #252e30;
@@ -13,7 +14,7 @@ $text-gray: #919191;
 // Style
 
 html, body {
-    font-family: $font-stack;
+    font-family: $font-stack !important;
     width: 100%;
     height: 100%;
 
@@ -22,11 +23,49 @@ html, body {
         height: 100%;
         background: url(../images/header-bg.jpg) center center no-repeat;
         background-size: cover;
+        line-break: strict;
+
+        .btn {
+            max-width: 185px;
+            width: 100%;
+            background-color: transparent;
+            border: solid 2.5px white;
+            color: white;
+            padding: 21px 35px;
+            margin-top: 50px;
+            font-weight: bold;
+            border-radius: 0;
+        }
 
         h1 {
+            line-height: normal;
             font-weight: bold;
-            font-size: 60pt;
+            font-size: $font-size-header-title;
             color: #ffffff;
+            border-top: white 2.5px solid;
+            border-bottom: white 2.5px solid;
+        }
+    }
+
+    .navbar {
+        background-color: $dark-grayish-blue;
+        max-height: 70px;
+        height: 70px;
+        max-width: 100vw;
+        width: 100%;
+        padding: 0;
+
+        .nav-item {
+            a {
+                font-weight: 700;
+                font-size: 16pt;
+                color: white;
+                line-height: 30pt;
+            }
+        }
+
+        span:first-child {
+            color: $focal-green;
         }
     }
 }
