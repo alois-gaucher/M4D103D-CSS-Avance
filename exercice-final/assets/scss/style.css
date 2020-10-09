@@ -8245,7 +8245,7 @@ html header, body header {
   height: 100%;
   background: url(../images/header-bg.jpg) center center no-repeat;
   background-size: cover;
-  line-break: strict;
+  line-break: auto;
 }
 html header .btn, body header .btn {
   max-width: 185px;
@@ -8261,7 +8261,7 @@ html header .btn, body header .btn {
 html header h1, body header h1 {
   line-height: normal;
   font-weight: bold;
-  font-size: 60pt !important;
+  font-size: 60px !important;
   color: #ffffff;
   border-top: white 2.5px solid;
   border-bottom: white 2.5px solid;
@@ -8276,12 +8276,48 @@ html .navbar, body .navbar {
 }
 html .navbar .nav-item a, body .navbar .nav-item a {
   font-weight: 700;
-  font-size: 16pt;
+  font-size: 16px;
   color: white;
-  line-height: 30pt;
+  line-height: 30px;
+}
+html .navbar .nav-item a:hover, body .navbar .nav-item a:hover {
+  color: #2ecc71;
 }
 html .navbar span:first-child, body .navbar span:first-child {
   color: #2ecc71;
+}
+html .container #summary, body .container #summary {
+  padding: 100px 0;
+}
+html .container #summary h2, body .container #summary h2 {
+  color: #566366;
+  font-size: 30px;
+}
+html .container #summary p, body .container #summary p {
+  color: #919191;
+  font-size: 18px;
+  font-weight: normal;
+}
+html .container #about-me, body .container #about-me {
+  background-color: #f2f2f1;
+  max-height: 750px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+html .container #about-me #img, body .container #about-me #img {
+  max-width: 610px;
+  width: 100%;
+  height: 100%;
+}
+html .container #about-me h2, body .container #about-me h2 {
+  color: #566366;
+  font-size: 30px;
+}
+html .container #about-me p, body .container #about-me p {
+  color: #919191;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

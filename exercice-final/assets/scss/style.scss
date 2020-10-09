@@ -4,12 +4,13 @@
 
 // Variables
 $font-stack: 'Roboto', sans-serif;
-$font-size-header-title: 60pt !important;
+$font-size-header-title: 60px !important;
 $focal-green: #2ecc71;
 $grayish-blue: #566366;
 $dark-grayish-blue: #252e30;
 $darker-grayish-blue: #191f21;
 $text-gray: #919191;
+$grayish-background: #f2f2f1;
 
 // Style
 
@@ -23,7 +24,7 @@ html, body {
         height: 100%;
         background: url(../images/header-bg.jpg) center center no-repeat;
         background-size: cover;
-        line-break: strict;
+        line-break: auto;
 
         .btn {
             max-width: 185px;
@@ -58,14 +59,61 @@ html, body {
         .nav-item {
             a {
                 font-weight: 700;
-                font-size: 16pt;
+                font-size: 16px;
                 color: white;
-                line-height: 30pt;
+                line-height: 30px;
+            }
+
+            a:hover {
+                color: $focal-green;
             }
         }
 
         span:first-child {
             color: $focal-green;
+        }
+    }
+
+    .container {
+
+        #summary {
+            padding: 100px 0;
+
+            h2 {
+                color: $grayish-blue;
+                font-size: 30px;
+            }
+
+            p {
+                color: $text-gray;
+                font-size: 18px;
+                font-weight: normal;
+            }
+        }
+
+        #about-me {
+            background-color: $grayish-background;
+            max-height: 750px;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+
+            #img {
+                max-width: 610px;
+                width: 100%;
+                height: 100%;
+            }
+
+            h2 {
+                color: $grayish-blue;
+                font-size: 30px;
+            }
+
+            p {
+                color: $text-gray;
+                font-size: 18px;
+                font-weight: normal;
+            }
         }
     }
 }
