@@ -8299,10 +8299,10 @@ html .navbar span:first-child, body .navbar span:first-child {
   color: #2ecc71;
 }
 html .container, body .container {
-  max-width: 1600px;
+  max-width: 100vw;
 }
 html .container #summary, body .container #summary {
-  padding: 100px 0;
+  padding: 100px 225px;
 }
 html .container #summary h2, body .container #summary h2 {
   color: #566366;
@@ -8317,6 +8317,16 @@ html .container #summary p, body .container #summary p {
   font-size: 18px;
   font-weight: normal;
   line-break: auto;
+}
+@media (max-width: 840px) {
+  html .container #summary, body .container #summary {
+    max-height: none;
+    height: 100%;
+    max-width: none;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0;
+  }
 }
 html .container #about-me, body .container #about-me {
   background-color: #f2f2f1;
@@ -8337,16 +8347,40 @@ html .container #about-me p, body .container #about-me p {
   font-weight: normal;
   line-break: auto;
 }
+@media (max-width: 840px) {
+  html .container #about-me, body .container #about-me {
+    max-height: none;
+    height: 100%;
+  }
+  html .container #about-me .col, body .container #about-me .col {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+html .container #about-me .content, body .container #about-me .content {
+  padding: 100px 210px 100px 100px;
+}
+html .container #about-me .content #content, body .container #about-me .content #content {
+  padding-top: 80px;
+}
+html .container #about-me .content img, body .container #about-me .content img {
+  padding-right: 30px;
+}
 html .container #about-me #img, body .container #about-me #img {
   max-width: 610px;
   max-height: 750px;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 html .container #resume, body .container #resume {
   margin-top: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #f2f2f1;
+  background-size: cover;
 }
 html .container #resume h2, body .container #resume h2 {
   color: #566366;
