@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <!-- Stylesheets -->
     <link href="assets/scss/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous"/>
     <!-- Meta -->
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
@@ -47,7 +50,7 @@
     </nav>
 </div>
 <div class="main">
-    <div class="container">
+    <div class="container container-fluid">
         <div id="summary" class="row align-left">
             <div class="col">
                 <h2>VALUES</h2>
@@ -67,7 +70,7 @@
         </div>
         <div id="about-me" class="row align-items-center">
             <div id="img" class="col">
-                <img src="assets/images/img-1.jpg" alt="">
+                <img class="img-fluid" src="assets/images/img-1.jpg" alt="">
             </div>
             <div class="col">
                 <h2>ABOUT ME</h2>
@@ -125,7 +128,41 @@
                 </div>
             </div>
         </div>
+        <div id="resume" class="row">
+            <div class="col">
+                <div class="container container-fluid text-center">
+                    <h2 class="text-center">RESUME</h2>
+                    <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute
+                        disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis
+                        molestiae pri. </p>
+                    <button class="btn">DOWNLOAD RESUME</button>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<div id="footer">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Copyright 2014 Focal - Built With Passion</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-inline-flex">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -8266,13 +8266,25 @@ html header h1, body header h1 {
   border-top: white 2.5px solid;
   border-bottom: white 2.5px solid;
 }
+@media (max-width: 840px) {
+  html .navbar, body .navbar {
+    background-color: #252e30;
+    height: auto;
+    max-width: 100vw;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  html .navbar-brand, body .navbar-brand {
+    padding: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 html .navbar, body .navbar {
   background-color: #252e30;
-  max-height: 70px;
-  height: 70px;
+  height: auto;
   max-width: 100vw;
-  width: 100%;
-  padding: 0;
 }
 html .navbar .nav-item a, body .navbar .nav-item a {
   font-weight: 700;
@@ -8285,6 +8297,9 @@ html .navbar .nav-item a:hover, body .navbar .nav-item a:hover {
 }
 html .navbar span:first-child, body .navbar span:first-child {
   color: #2ecc71;
+}
+html .container, body .container {
+  max-width: 1600px;
 }
 html .container #summary, body .container #summary {
   padding: 100px 0;
@@ -8307,7 +8322,6 @@ html .container #about-me, body .container #about-me {
   background-color: #f2f2f1;
   max-height: 750px;
   height: 100%;
-  width: 100%;
 }
 html .container #about-me h2, body .container #about-me h2 {
   color: #566366;
@@ -8325,12 +8339,45 @@ html .container #about-me p, body .container #about-me p {
 }
 html .container #about-me #img, body .container #about-me #img {
   max-width: 610px;
-  width: 100%;
   max-height: 750px;
   height: 100%;
 }
+html .container #resume, body .container #resume {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f2f2f1;
+}
+html .container #resume h2, body .container #resume h2 {
+  color: #566366;
+  font-size: 30px;
+}
+html .container #resume h3, body .container #resume h3 {
+  color: #566366;
+  font-size: 22px;
+}
+html .container #resume p, body .container #resume p {
+  color: #919191;
+  font-size: 18px;
+  font-weight: normal;
+  line-break: auto;
+}
+html .container #resume .btn, body .container #resume .btn {
+  max-width: 185px;
+  width: 100%;
+  background-color: transparent;
+  border: solid 2.5px #2ecc71;
+  color: #2ecc71;
+  padding: 20px 30px;
+  font-weight: bold;
+  border-radius: 0;
+  text-align: center;
+}
+html .container #resume .btn, body .container #resume .btn {
+  max-width: 220px;
+}
 html .container #my-skills, body .container #my-skills {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 html .container #my-skills h2, body .container #my-skills h2 {
   color: #566366;
@@ -8353,9 +8400,31 @@ html .container #my-skills .btn, body .container #my-skills .btn {
   border: solid 2.5px #2ecc71;
   color: #2ecc71;
   padding: 20px 30px;
-  margin-top: 20px;
   font-weight: bold;
   border-radius: 0;
+  text-align: center;
+}
+html #footer footer, body #footer footer {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #191f21;
+  color: #4b5456;
+}
+html #footer footer a:hover i, body #footer footer a:hover i {
+  color: white;
+  transition-duration: 1s;
+}
+html #footer footer i, body #footer footer i {
+  background-color: #4b5456;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  vertical-align: middle;
+  color: #191f21;
+  font-size: 20px;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

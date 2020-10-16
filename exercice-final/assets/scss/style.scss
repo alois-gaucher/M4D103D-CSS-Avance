@@ -11,6 +11,7 @@ $dark-grayish-blue: #252e30;
 $darker-grayish-blue: #191f21;
 $text-gray: #919191;
 $grayish-background: #f2f2f1;
+$footer-grayish-blue: #4b5456;
 
 // Mixins
 @mixin h1h2h3p {
@@ -29,6 +30,20 @@ $grayish-background: #f2f2f1;
         font-size: 18px;
         font-weight: normal;
         line-break: auto;
+    }
+}
+
+@mixin btn-green {
+    .btn {
+        max-width: 185px;
+        width: 100%;
+        background-color: transparent;
+        border: solid 2.5px $focal-green;
+        color: $focal-green;
+        padding: 20px 30px;
+        font-weight: bold;
+        border-radius: 0;
+        text-align: center;
     }
 }
 
@@ -68,13 +83,27 @@ html, body {
         }
     }
 
+    @media (max-width: 840px) {
+        .navbar {
+            background-color: $dark-grayish-blue;
+            height: auto;
+            max-width: 100vw;
+            padding: 0;
+            display: flex;
+            flex-flow: column wrap;
+            text-align: center;
+        }
+
+        .navbar-brand {
+            padding: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+
     .navbar {
         background-color: $dark-grayish-blue;
-        max-height: 70px;
-        height: 70px;
+        height: auto;
         max-width: 100vw;
-        width: 100%;
-        padding: 0;
 
         .nav-item {
             a {
@@ -96,6 +125,8 @@ html, body {
 
     .container {
 
+        max-width: 1600px;
+
         #summary {
             padding: 100px 0;
             @include h1h2h3p;
@@ -106,31 +137,61 @@ html, body {
             background-color: $grayish-background;
             max-height: 750px;
             height: 100%;
-            width: 100%;
 
             #img {
                 max-width: 610px;
-                width: 100%;
                 max-height: 750px;
                 height: 100%;
             }
         }
 
-        #my-skills {
-            padding: 100px 0;
+        #resume {
             @include h1h2h3p;
+            @include btn-green;
 
             .btn {
-                max-width: 185px;
-                width: 100%;
-                background-color: transparent;
-                border: solid 2.5px $focal-green;
-                color: $focal-green;
-                padding: 20px 30px;
-                margin-top: 20px;
-                font-weight: bold;
-                border-radius: 0;
+                max-width: 220px;
+            }
+            margin-top: 100px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color: $grayish-background;
+        }
+
+        #my-skills {
+            padding: 100px 0 0 0;
+            @include h1h2h3p;
+            @include btn-green;
+        }
+    }
+
+    #footer {
+        footer {
+            padding: 50px 0;
+            text-align: center;
+            background-color: $darker-grayish-blue;
+            color: $footer-grayish-blue;
+
+            a:hover {
+                i {
+                    color: white;
+                    transition-duration: 1s;
+                }
+            }
+
+            i {
+                background-color: $footer-grayish-blue;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 35px;
+                vertical-align: middle;
+                color: $darker-grayish-blue;
+                font-size: 20px;
+                margin: 0 5px;
             }
         }
     }
+
 }
