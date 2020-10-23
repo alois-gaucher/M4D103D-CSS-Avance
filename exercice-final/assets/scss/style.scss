@@ -1,6 +1,7 @@
 // Includes
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css');
 
 // Variables
 $font-stack: 'Roboto', sans-serif;
@@ -199,6 +200,242 @@ html, body {
             padding: 100px 0 0 0;
             @include h1h2h3p;
             @include btn-green;
+
+            .progress {
+                height: 30px;
+                border-radius: 0 !important;
+
+                .progress-bar {
+                    background-color: $focal-green;
+                    border-radius: 0 !important;
+                    text-align: right;
+                    padding-right: 5px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        #resumeplus {
+            hr {
+                border: none;
+                height: 1px;
+                padding-left: 210px;
+                padding-right: 210px;
+            }
+        }
+
+        #contact {
+            @include h1h2h3p;
+            @include btn-green;
+            background-color: $dark-grayish-blue;
+            max-height: 910px;
+            height: 100%;
+            padding: 100px 210px;
+            font-size: 18px;
+
+            .btn {
+                background-color: $darker-grayish-blue;
+                border: none;
+                color: white;
+                margin-top: 30px;
+            }
+
+            #phone-mail {
+                span {
+                    color: white;
+                }
+            }
+
+            @media (max-width: 840px) {
+                max-height: none;
+                height: 100%;
+                padding: 5px;
+                .col {
+                    max-width: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            h2 {
+                color: white;
+            }
+
+            #contact-form {
+
+                color: white;
+                font-size: 18px;
+
+                label {
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
+
+                textarea {
+                    height: 280px;
+                }
+
+                input {
+                    height: 55px;
+                }
+
+                textarea, input {
+                    background-color: $footer-grayish-blue;
+                    border: none;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        #education {
+            @include h1h2h3p;
+            padding: 100px 210px;
+            font-size: 18px;
+
+            @media (max-width: 840px) {
+                max-height: none;
+                height: 100%;
+                padding: 5px;
+                .col {
+                    max-width: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .education {
+                hr {
+                    border: none;
+                    height: 1px;
+                }
+
+                .badge {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 8px;
+                    border-radius: 0;
+                    background-color: $focal-green;
+                }
+            }
+        }
+
+        #work-experience {
+            @include h1h2h3p;
+            padding: 100px 210px;
+            font-size: 18px;
+
+            @media (max-width: 840px) {
+                max-height: none;
+                height: 100%;
+                padding: 5px;
+                .col {
+                    max-width: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .work {
+                hr {
+                    border: none;
+                    height: 1px;
+                }
+
+                .badge {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 8px;
+                    border-radius: 0;
+                    background-color: $focal-green;
+                }
+            }
+        }
+
+        #reviews {
+            @include h1h2h3p;
+            padding: 100px 210px;
+            font-size: 18px;
+            background-color: $grayish-background;
+            background-size: cover;
+
+            @media (max-width: 840px) {
+                max-height: none;
+                height: 100%;
+                padding: 5px;
+                .col {
+                    max-width: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+        #portfolio {
+            @include h1h2h3p;
+            padding: 100px 210px;
+            font-size: 18px;
+
+            @media (max-width: 840px) {
+                max-height: none;
+                height: 100%;
+                padding: 5px;
+                .col {
+                    max-width: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            figure {
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $focal-green;
+                    visibility: hidden;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+
+                img:hover {
+                    webkit-filter: blur(3px); /* Chrome, Safari, Opera */
+                    filter: blur(3px);
+                    transition: 1s;
+                }
+
+                .col figure:hover .overlay {
+                    opacity: 0.8;
+                    visibility: visible;
+                }
+
+                .text {
+                    color: white;
+                    font-size: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+            }
         }
     }
 
